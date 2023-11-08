@@ -15,38 +15,84 @@
     <div id="app">
       <header class="header">
         <div class="container">
-          <img class="header__logo" src="/images/logo.svg" alt="Логотоп" />
-          <nav class="header__navigaton">
-            <ul class="header__links">
-              <li>
-                <a href="#" class="header__link">Главная</a>
-              </li>
-              <li>
-                <a href="#" class="header__link">Обо мне</a>
-              </li>
-              <li>
-                <a href="#" class="header__link">Технологии</a>
-              </li>
-              <li>
-                <a href="#" class="header__link">Проекты</a>
-              </li>
-              <li>
-                <a href="#" class="header__link">Контакты</a>
-              </li>
-              <li>
-                <a href="https://github.com/Blojer" class="header__link" target="_blank"
-                  ><img class="header__link_type_git" src="/images/git-icon.svg" alt="GitHub"
-                /></a>
-              </li>
-            </ul>
-          </nav>
+          <div class="header__contant">
+            <img class="header__logo" src="/images/logo.svg" alt="Логотоп" />
+            <nav class="header__navigaton">
+              <ul class="header__links">
+                <li>
+                  <a href="#" class="header__link">Главная</a>
+                </li>
+                <li>
+                  <a href="#" class="header__link">Обо мне</a>
+                </li>
+                <li>
+                  <a href="#" class="header__link">Технологии</a>
+                </li>
+                <li>
+                  <a href="#" class="header__link">Проекты</a>
+                </li>
+                <li>
+                  <a href="#" class="header__link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </header>
       <main class="main">
         <div class="container">
-          <h1 class="main__title">Привет, Меня зовут Антон, я {Frontend} разработчик</h1>
+          <section class="profile">
+            <h1 class="profile__title">
+              Привет, Меня зовут Антон, я <span>{Frontend}</span> разработчик
+            </h1>
+            <img src="./images/photo.jpg" alt="Фото" class="profile__image" />
+          </section>
+          <section class="tech">
+            <h2 class="container__title">Мой Стек Технологий</h2>
+            <h3 class="container__subtitle">Technologies I’ve been working with recently</h3>
+            <ul class="tech__items">
+              <li class="tech__item"></li>
+            </ul>
+          </section>
+
+          <section class="project">
+            <h2 class="container__title">Проекты</h2>
+            <h3 class="container__subtitle">Things I’ve built so far</h3>
+            <ul class="project__items">
+              <li class="project__item">
+                <img src="" alt="" class="progect__image" />
+                <h4 class="project__title">Project Tile goes here</h4>
+                <p class="project__paragraph">
+                  This is sample project description random things are here in description This is
+                  sample project lorem ipsum generator for dummy content
+                </p>
+                <h5 class="projeck__tech">
+                  <span>Tech stack :</span> HTML , JavaScript, SASS, React
+                </h5>
+                <div class="project__links">
+                  <a href="" class="project__link"
+                    ><img src="#" alt="" class="project__link-image" />Live Preview</a
+                  >
+                  <a href="" class="project__link"
+                    ><img src="#" alt="" class="project__link-image" />View Code</a
+                  >
+                </div>
+              </li>
+            </ul>
+          </section>
+          <section class="contacts">
+            <p>+7 920 222 22 70</p>
+            <p>bogatyh.anton@gmail.com</p>
+            <p>@blojer</p>
+          </section>
         </div>
       </main>
+      <footer class="footer">
+        <div class="container">
+          <a href="#">git</a>
+          <a href="#">telegram</a>
+        </div>
+      </footer>
     </div>
     <script type="module" src="/src/js/main.js"></script>
   </body>
